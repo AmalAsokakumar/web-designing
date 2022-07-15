@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:weight@400;500&display=swap');
+*{
+     box-sizing:border-box;
+     margin:0px;
+     padding:0px;
+}
+body{
+     background-color:#F9F9F9; 
+     }
+#menuBar_id{
+     color: #606060;
+     margin:13px 0;
+     margin-right:0px;
+     font-size: 20px;
+     cursor:pointer;
+     border:0px;
+     margin-top:0px;
+}
+.youtubeHeader {
+     background-color: White;
+     width: 100%;
+     position: fixed;
+     top:0px;
+     display:flex;
+     flex-direction:row;
+     justify-content:space-between;
+     align-items: center;
+     height:60px;
+}
+.youtubeLogo {
+     display:flex;
+     flex-direction:row;
+     align-items:center;
+     justify-content:space-between; 
+}
+#menuBar_id{
+     padding-top:16px;
+     padding-left:12px;
+     padding-right:5px;
+}
+
+.youtubeLogoSVG{
+     height:30px;
+     margin: 7px;
+     margin-top:10px;
+     margin-left:10px;
+     cursor: pointer;
+}
+.youtubeSearchBar{ 
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items:center;
+}
+.youtubeHeaderSearchInput{
+
+     outline:none;
+     padding: 4px;
+     width : 30em;
+     font-size: 15px;
+     display: flex;
+     flex-direction: center;
+     justify-content:center;
+     align-items:center;
+}
+ .youtubeHeaderSearchInput::-webkit-input-placeholder {
+     font-size:17px;
+ }
+.searchIconHeader{
+     padding: 8px;
+     border: 1px solid grey;
+     background-color: #F8F8F8;
+     padding-right: 25px;
+     padding-left: 25px;
+     outline: none;
+     cursor: pointer;
+
+}
+.searchIconHeader i{
+     color :#606060;
+     font-size:15px;
+}
+.youtubeHeaderIcons{
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;  
+     padding-left: 10px;
+}
+
+.youtubeHeaderIcon{ 
+     color: #606060;
+     margin:13px 0;
+     margin-right:20px;
+     font-size: 20px;
+     cursor:pointer;
+}
+.youtubeBottomSection{ 
+     display: flex;
+     flex-direction: row;
+}
+
+.youtubeSidebar{
+     margin-top:50px;
+     display:flex;
+     flex-direction: column;
+     background-color: white;
+     width: 250px;
+     height: 100vh; /* view height ( maximum viewable height in screen at an instance)*/
+     position:fixed; /*position: relative fixed*/
+     left:0;  /*position of the side bar begins from the left most position.*/
+}
+.youtubeSidebarField{
+     display: flex;
+     flex-direction: center;
+     align-items:center;
+     width:100%;
+     margin:5px;
+     cursor:pointer;
+     padding-left: 10px;
+}
+.youtubeSidebarField :hover{
+     background-color:#e5e5e5ab;
+}
+.youtubeSidebarField i {
+     font-size: 15px;
+     color:#606060;
+    /* margin: 140px auto 25px;
+     margin-right:25px;
+     margin-left:20px;*/
+     padding-right: 5px;
+}
+.youtubeSidebarField h1{
+     font-size: 15px;
+     font-family:'Roboto';
+     font-weight: 500;
+}
+.youtubeSidebar_hr{
+     height:1px;
+     border-top:1px solid rgba(128,128,128,0.397);
+     width:100%;
+}

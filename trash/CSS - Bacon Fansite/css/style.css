@@ -1,0 +1,32 @@
+.style{
+     color: rosybrown;
+     font-family: times, "Times New Roman";
+     font-size: 26px;
+     background-color: aliceblue;
+     padding: 100px;
+     orientation: landscape;
+     text-align: center;
+     background: lightgray;
+}
+#heading{
+     text-decoration: dashed;
+}
+#image-tag{
+     width: 200px;
+}
+
+#image-2{
+     width:200px;
+}
+#image-tag:hover{
+     width: 200px;
+     background:linear-gradient( to left,blue,green);
+}
+
+#image-2:hover{
+     width:200px;
+      background:linear-gradient(to left, red,blue);
+}
+
+
+

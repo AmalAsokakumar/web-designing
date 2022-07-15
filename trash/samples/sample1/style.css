@@ -1,0 +1,29 @@
+button{
+
+     background: green;
+     color: black;
+
+}
+#para{
+
+     background: lightblue;
+     color: White;
+}
+
+.content{
+     color:orange;
+}
+hr{
+     border-color: lightgrey;
+     border-width: 5px;
+     border-style: none;
+     border-top-style: dotted;
+     width :5%;
+     height:0px;
+}
+h1{
+     color: #66BFBF;
+}
+h3{ 
+     color: #66BFBF;
+}
