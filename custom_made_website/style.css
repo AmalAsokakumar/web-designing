@@ -1,0 +1,226 @@
+/* initialization part */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: arial, sans-serif;
+}
+header {
+  /* main header part */
+  width: 100%;
+  background-color: rgba(23, 23, 23, 0.15);
+  padding: 20px;
+  position: absolute;
+  top: 0;
+}
+
+header .container {
+     /* to align nav bar items in row */
+     display: flex;
+     justify-content: space-between;
+     width :1150px;
+     margin :auto;
+   }
+
+/* navigation  */
+
+header h1 {
+  /* nullifying the anchor tag decoration */
+  text-decoration: none;
+}
+
+header a {
+  /* nav bar items */
+  text-decoration: none;
+  margin-right: 100px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-family: tahoma, sans-serif;
+  color: rgba(255, 255, 255, 0.719);
+}
+
+
+
+.banner-container { /* this is where the actual body begins */
+  /* margin-top:100px; */ /*to fully in corporate the background picture*/
+  width: 100%;
+  height: 100vh; /* with out fle this height is not accessible to the other sub containers */
+  /* background-image:url(./images/background.jpg); */
+  /* filter:brightness(1); */ /* with this we can control the brightness of a website*/
+  background: linear-gradient(rgba(6, 72, 105, 0.123), rgb(3, 96, 113)),
+    url(./images/background.jpg); /* here i have used both linear gradient and picture for background*/
+  display: flex; /* to fully utilize the total width */
+  align-items: center;
+}
+
+.banner-container .container {
+  display: flex;
+  justify-content: space-around; /* to properly place the body items in the center ( with respect to the orientation of flex)*/
+  align-items: center; 
+  /* This works in a direction which is opposite to flex orientation ( ie if flex is row, this will adjust vertical spacing and vice vers for flex : column;*/
+  width: 100%;
+}
+
+/* left part of the container */
+
+.banner-container .left-section{
+     width:600px;
+     align-self: flex-start;  /* align the content to start of this div*/
+}
+
+.banner-container .left-section h1 {
+  margin: 0px;
+  font-size: 40px;
+  color: white;
+  width: 500px; /* this is actually not required, but is used to show that because we are using flex if the content length (p) get increased it may push the right side section to the edge and alignment of the page may get destroyed to avoid this we use a predefined width */
+}
+
+.banner-container .left-section p {
+  margin: 0px;
+  font-size: var(--font-size);
+  letter-spacing: 1px;
+  color: whitesmoke;
+  margin-top: 20px;
+  line-height: 28px; /* usually 2 times font size is used as line height */
+}
+
+.banner-container .left-section button {
+  /* color: rgb(78, 78, 78); */
+  color: var(--primary-color); /* text inside the button's color*/
+  background-color: white;
+  border: none; /* we don't need a border around the button which must at least be around 1px in boxed shape by default*/
+  padding: 12px 50px; /*(top-bottom  left -right) fixing the button shape using padding */
+  border-radius: 6px; /* to curve the the edges of the button */
+  margin-top: 15px; /*to set the distance between the <p> and the <button> */
+}
+
+/*  ending of left section */
+
+/* starting of form section */
+.banner-container .right-section {
+  width: 400px;
+  background-color: white;
+  border-radius: 15px; /*for curving the corner */
+  padding: 40px 0;
+  box-shadow: 0 5px 6px rgba(0, 0, 0, 0.876); /* top-bottom left-right (+ top-bottom - bottom-top) opacity */
+}
+
+.banner-container .right-section h4 {
+  font-size: 20;
+  width: 300px;
+  margin: auto;
+  margin-bottom: 30px;
+  color: rgb(136, 136, 136);
+  display: flex;
+  justify-content: center;
+}
+
+.banner-container .right-section .input-group {
+  width: 300px;
+  margin: 20px auto; /* right-left will b self centring - because of auto */
+  display: flex;
+  flex-direction: column;
+  position: relative; /* to make a reference position for absolute position ( act as a relative parent  */
+}
+
+.banner-container .right-section .input-group label {
+  /* to style the labels */
+  color: rgb(165, 165, 165);
+  font-size: var(--font-size);
+  position: absolute; /*  position will be based on it's relative parent  */
+  top: 10px;
+}
+
+.banner-container .right-section .input-group {
+  /* to style the boxes*/
+  border: none;
+  padding: 7px;
+  margin-top: 5px;
+  outline: none; /*to disable the  focus when the cursor hovers*/
+  color:var(--primary-color);
+  caret-color:red; /* change the cursor color to red */
+  border-bottom: 1px solid #c9c9c98a;
+}
+
+.banner-container .right-section .input-group input:focus ~ label,
+.banner-container .right-section .input-group input:valid ~ label { /* to insure that the labels won't go down when we remove the pointer.*/
+  /* to access the sibling ~  */
+  color: var(--primary-color);
+  top: -10px;
+  font-size: 12px;
+}
+
+.submit-section {
+     text-align: center; /* if flex is column thn for horizontal alignment align-item is used; */
+}
+.submit-button {
+     background-color: var(--primary-color);
+     color: white;
+     padding: 10px;
+     margin-top: 15px;
+     border-radius:5px;
+     width:300px;
+     cursor: pointer;
+}
+.submit-button:hover{
+     box-shadow: 0 3px 6px silver;
+}
+
+
+/*end of section one*/
+
+/* starting of section two*/
+
+
+.section-2{
+     display:flex;
+     justify-content: space-evenly;
+     height: 100vh;
+     align-items: center;
+}
+
+ .card-container{
+     width:350px;
+     border-radius: 15px;
+     box-shadow: 10px 5px 26px black;
+     overflow: hidden; /* to remove the sections outside the container margin */
+
+
+}
+
+.card-container h1 {
+     color: rgb(136, 136, 136);
+     /* display :flex;
+     justify-content: center; */
+     text-align: center; /* for alignment of texts */
+} 
+
+.image-container{
+     width: 100%;
+     height:450px;
+}
+.image-container img{
+     width: 100%;
+     height: 100%;
+     object-fit:cover;
+     overflow: hidden;
+     transition: 0.5s ease-in-out;
+}
+
+.image-container img:hover {
+     transform: scale(1.1) rotate(-5deg);
+}
+
+
+footer{
+     text-align: center;
+     color: grey;
+     padding : 20px;
+
+}
+footer span{
+     color: var(--primary-color);
+     font-weight: bold;
+}
