@@ -1,0 +1,19 @@
+
+..hidden1{
+background-color: silver;
+}
+
+.hidden1 > div:nth-child(odd){
+   
+     background-color: whitesmoke;
+     
+     
+     
+}
+
+.hidden1{
+     display:grid;
+     grid-template-columns: 60% 40%;
+     padding:1em;
+     grid-gap:10px;
+}
