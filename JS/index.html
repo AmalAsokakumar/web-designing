@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+<body>
+
+     <input type="text" placeholder="enter something" id="text-field">
+     <button onclick="display()">click me</button>
+     <h1 id="demo"></h1>
+
+     <script>
+           function display() {
+          var one= document.getElementById("text-field").value
+          document.getElementById("demo").innerHTML=one
+          console.log(one)
+          
+
+     }
+     </script>
+
+     <style >
+
+          #screen{
+               width:500px;
+               height:500px;
+               border:1px solid;
+          }
+     </style>
+    
+    <div id="screen">
+     <button  onclick="display('red')">red</button>
+     <button onclick="display('green')">green</button>
+     <button onclick="display('yellow')">yellow</button>
+    </div>
+     
+    <script>
+     function display(color) {
+          document.getElementById("screen").style.background=color
+     }
+    </script>
+
+
+</body>
+</html>
